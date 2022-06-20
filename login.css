@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+  font-family: "Kavivanar", cursive;
+  background-color: #fff;
+}
+
+header{
+  background-color: #F8F9F9;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand{
+  font-family: catamaran;
+  font-size: 34px;
+float:left;
+  font-weight: 900;
+  color: #111;
+  border-right:3px solid #111;
+  display: block;
+  line-height: 38px;
+    margin: 31px 0;
+  text-align:left;
+padding: 0 20px 0 40px;
+}
+
+
+header nav ul{
+display: block;
+float: left;
+margin: 20px 0px;
+
+}
+header nav ul li{
+display:inline-block;
+float: left;
+list-style: none;
+padding: 0 16px;
+}
+header nav ul li a{
+  font-family: catamaran;
+  font-size: 20px;
+  color: #111;
+  line-height:60px;
+  text-transform: uppercase;
+}
+
+
+/*index page*/
+
+.index-banner{
+  width: 100%;
+  height:500px;
+    background-image: url("images/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+/*code display:table from here
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=table*/
+.vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2{
+  margin-top: 0;
+  font-family: catamaran;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+.index-banner h1{
+  font-family: catamaran Garamond;
+  font-size: 38px;
+  width: 560px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+
+
+
+
+
+.container{
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.img img{
+	width: 500px;
+}
+
+.login-container{
+
+	display: flex;
+	justify-content: flex-start;
+ 	align-items:center;
+	text-align: center;
+}
+
+form{
+	width: 360px;
+}
+
+.avtar{
+	width: 200px;
+}
+form h3{
+	font-size: 2rem;
+	margin: 15px 0;
+	color: #333;
+}
+.input-div{
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px;
+	border-bottom: 2px solid #d9d9d9;
+}
+.input-div:after,.input-div:before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color:#BD8D27 ;
+  transition: .3s;
+}
+.input-div:after{
+  right: 50%;
+}
+.input-div:before{
+  left :50%;
+}
+.input-div.focus .i i{
+	color: #BD8D27;
+}
+.input-div.focus div h5{
+	top: -3px;
+	font-size: 15px;
+}
+.input-div.focus:after,.input-div.focus:before{
+  width: 50%;
+
+}
+.input-div.one{
+	margin-top: 0;
+}
+.input-div.two{
+	margin-bottom: 4px;
+}
+.i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	color: #d9d9d9;
+  transition: .3s;
+}
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+.input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #D68910 ;
+}
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #eac146, #FFDA8A , #eac146);
+  margin: 1rem 0;
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+
+@media  screen and (max-width: 1050px){
+	.container{
+		grid-gap: 3rem;
+	}
+}
+@media screen and (max-width: 1000px){
+
+  form{
+    width: 290px;
+  }
+  form h2{
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+  .img img{
+    width: 300px;
+  }
+
+}
+  @media screen and (max-width: 900px){
+  .img{
+    display: none;
+  }
+.container{
+  grid-template-columns: 1fr;
+ }
+ .longin-container{
+   justify-content: center;
+ }
+
+}
+
+
+
+/*footer*/
+footer{
+  width: calc(100%- 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+
+}
+footer ul{
+width: fit-content;
+float: left;
+padding-right: 20px;
+}
+footer ul li {
+  display:block;
+  list-style: none;
+}
+footer ul li a{
+  font-family: catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height:30px;
+}
+.footer-sm{
+
+  top: 400%;
+  transform: translateY(-50);
+  width: 100%;
+  text-align:center;
+}
+.bto{
+  display:inline-block;
+  width: 90px;
+  height: 90px;
+  background:white;
+  margin: 10px;
+  border-radius: 70%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color:black;
+  overflow: hidden;
+  position: relative;
+}
+.bto i{
+
+  line-height: 80px;
+  font-size: 40px;
+  transition:0.2s linear;
+}
+
+.bto:hover i{
+  transform: scale(1.6);
+  color:#935116;
+}
+.bto:before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background:rgb(251, 208, 81,0.8);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 100%;
+
+}
+.bto:hover:before{
+  animation:aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@media  only screen and (min-width:1000px) {
+  .wrapper{
+    width: 1090px;
+    margin: 0 auto;
+}
+  }

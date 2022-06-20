@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+  font-family: "Kavivanar", cursive;
+  background-color: #fff;
+}
+
+header{
+  background-color: #F8F9F9;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand{
+  font-family: catamaran;
+  font-size: 34px;
+float:left;
+  font-weight: 900;
+  color: #111;
+  border-right:3px solid #111;
+  display: block;
+  line-height: 38px;
+    margin: 31px 0;
+  text-align:left;
+padding: 0 20px 0 40px;
+}
+
+
+header nav ul{
+display: block;
+float: left;
+margin: 20px 0px;
+
+}
+header nav ul li{
+display:inline-block;
+float: left;
+list-style: none;
+padding: 0 16px;
+}
+header nav ul li a{
+  font-family: catamaran;
+  font-size: 20px;
+  color: #111;
+  line-height:60px;
+  text-transform: uppercase;
+}
+
+
+/*index page*/
+
+.index-banner{
+  width: 100%;
+  height:500px;
+  background-image: url("images/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+/*code display:table from here
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=table*/
+.vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2{
+  margin-top: 0;
+  font-family: catamaran;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+.index-banner h1{
+  font-family: catamaran Garamond;
+  font-size: 38px;
+  width: 560px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+
+
+
+
+    .wrapper {
+      margin: 100px auto 0;
+      width: 100%;
+      max-width: 1000px;
+      box-sizing: border-box;
+    }
+
+    /* content */
+
+    .container{
+        padding-right: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap :7rem;
+
+    }
+
+
+
+    .img{
+    	display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
+    }
+    .login-container{
+    padding:  0px 100px 0px 0px;
+    margin-top: 20px;
+
+    }
+
+    /* form */
+    .form {
+
+      width: 140%;
+      margin: 25px 0;
+    }
+
+    .top-form,
+    .middle-form,
+    .bottom-form {
+      width: 110%;
+      min-height: 65px;
+      margin: 10px 0;
+    }
+
+    .form input[type="text"],
+    .form textarea {
+      border: 2px solid #fff;
+      padding: 15px 5px;
+      outline: none;
+      border-radius: 2px;
+      width: 100%;
+      background-color: #FBF5E9 ;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+    }
+
+    .form input:focus,
+    .form textarea:focus {
+      border-color: #eac146;
+      outline: none;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+        0 0 8px rgba(76, 161, 175, 0.5);
+    }
+
+    .form .label {
+      margin-bottom: 5px;
+      text-transform: capitalize;
+    }
+
+    /* top-contact */
+    .top-form .inner-form {
+      width: 29.9%;
+      float: left;
+      margin-right: 5%;
+    }
+
+    .top-form .inner-form:last-child {
+      margin-right: 0;
+    }
+
+
+    /* middle-form */
+    .middle-form {
+      clear: both;
+    }
+
+    /* bottom-form */
+    .bottom-form textarea {
+      height: 120px;
+    }
+
+    .btn {
+      background:#eac146;
+      width: 200px;
+      padding: 10px 0;
+      border-radius: 2px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      cursor: pointer;
+    }
+
+
+
+
+/*footer*/
+footer{
+  width: calc(100%- 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+
+}
+footer ul{
+width: fit-content;
+float: left;
+padding-right: 20px;
+}
+footer ul li {
+  display:block;
+  list-style: none;
+}
+footer ul li a{
+  font-family: catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height:30px;
+  text-decoration:none;
+}
+.footer-sm{
+
+  top: 400%;
+  transform: translateY(-50);
+  width: 100%;
+  text-align:center;
+}
+.bto{
+  display:inline-block;
+  width: 90px;
+  height: 90px;
+  background:white;
+  margin: 10px;
+  border-radius: 70%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color:black;
+  overflow: hidden;
+  position: relative;
+}
+.bto i{
+
+  line-height: 80px;
+  font-size: 40px;
+  transition:0.2s linear;
+}
+
+.bto:hover i{
+  transform: scale(1.6);
+  color:#935116;
+}
+.bto:before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background:rgb(251, 208, 81,0.8);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 100%;
+
+}
+.bto:hover:before{
+  animation:aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@media  only screen and (min-width:1000px) {
+  .wrapper{
+    width: 1090px;
+    margin: 0 auto;
+}
+  }

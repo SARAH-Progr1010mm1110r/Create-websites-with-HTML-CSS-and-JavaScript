@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+  font-family: "Kavivanar", cursive;
+  background-color: #fff;
+}
+
+header{
+  background-color: #F8F9F9;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand{
+  font-family: catamaran;
+  font-size: 34px;
+float:left;
+  font-weight: 900;
+  color: #111;
+  border-right:3px solid #111;
+  display: block;
+  line-height: 38px;
+    margin: 31px 0;
+  text-align:left;
+padding: 0 20px 0 40px;
+}
+
+
+header nav ul{
+display: block;
+float: left;
+margin: 20px 0px;
+
+}
+header nav ul li{
+display:inline-block;
+float: left;
+list-style: none;
+padding: 0 16px;
+}
+header nav ul li a{
+  font-family: catamaran;
+  font-size: 20px;
+  color: #111;
+  line-height:60px;
+  text-transform: uppercase;
+}
+
+
+/*index page*/
+
+.index-banner{
+  width: 100%;
+  height:500px;
+  background-image: url("images/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+/*code display:table from here
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=table*/
+.vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2{
+  margin-top: 0;
+  font-family: catamaran;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+.index-banner h1{
+  font-family: catamaran Garamond;
+  font-size: 38px;
+  width: 560px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+
+
+
+
+
+
+/*cart*/
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1000px;
+    /*margin: 0 auto;*/
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+
+
+/*color for button add to cart*/
+.btn-primary {
+    color: white;
+    background-color:#d2a930;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+/*color when mouse over tha button  add to cart*/
+.btn-primary:hover {
+    background-color:#d68910;
+}
+
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color:#333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 180px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color:#CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #E67E22;
+    background-color: #E5E7E9;
+    color:#333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+  width: calc(100%- 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+
+}
+footer ul{
+width: fit-content;
+float: left;
+padding-right:20px;
+}
+footer ul li {
+  display:block;
+  list-style: none;
+}
+footer ul li a{
+  font-family: catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height:30px;
+}
+a:hover{
+	color: #D68910 ;
+}
+.footer-sm{
+  top: 400%;
+  transform: translateY(-50);
+  width: 100%;
+  text-align:center;
+}
+.bto{
+  display:inline-block;
+  width: 90px;
+  height: 90px;
+  background:white;
+  margin: 10px;
+  border-radius: 70%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color:black;
+  overflow: hidden;
+  position: relative;
+}
+.bto i{
+  line-height: 90px;
+  font-size: 40px;
+  transition:0.2s linear;
+}
+
+.bto:hover i{
+  transform: scale(1.6);
+  color:#784212;
+}
+.bto:before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background:rgb(251, 208, 81,0.8);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 100%;
+
+}
+.bto:hover:before{
+  animation:aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@media  only screen and (min-width:1000px) {
+  .wrapper{
+    width: 1090px;
+    margin: 0 auto;
+}
+  }
